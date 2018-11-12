@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-	<title> Site Portifólio </title>
-		<meta charset="UTF-8">
-		<meta name ="description" content ="Free Web Tutorials">
-		<meta name ="keywords" content ="HTML,CSS,XML,JavaScript">
-		<meta name ="author" content ="Bianca Cruz">
-		<meta name ="viewport" content="width=device-width, initial-scale=1.0" >
-	<style>
-		#current a {
-			color: #FFC945;
-		}
-	</style>
-</head>
-<body>
-	<p>
-	<hr width = "70%" align = "right" color = "white">
-	<div class ="menu">
-		<ul>
-			<li id="current"> <a> Contato </a> </li>
-			<li> <a href="portifolio.html" target="_self"> Portifólio </a> </li>
-			<li> <a href="perfil.html" target="_self"> Perfil </a> </li>
-			<li> <a href="inicio.html" target="_self"> Início </a></li>
-		</ul>
-	<hr width = "100%" align = "right" color = "white">
-	<form action="/pagina-processa-dados-do-form" method="post">
+	<head>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<title> Site Portifólio </title>
+			<meta charset="UTF-8">
+			<meta name ="description" content ="Free Web Tutorials">
+			<meta name ="keywords" content ="HTML,CSS,XML,JavaScript">
+			<meta name ="author" content ="Bianca Cruz">
+			<meta name ="viewport" content="width=device-width, initial-scale=1.0" >
+	</head>
+	<body>
+		<div class="esp"> </div>
+		<hr class="linhac">
+		<h1 class="ass"> Bianca</br> &nbsp;&nbsp;&nbsp; Cruz </h1>
+		<div class ="menu">
+			<ul>
+				<li id="current"> <a> Contato </a> </li>
+				<li> <a href="portifolio.html" target="_self"> Portifólio </a> </li>
+				<li> <a href="perfil.html" target="_self"> Perfil </a> </li>
+				<li> <a href="inicio.html" target="_self"> Início </a></li>
+			</ul>
+		</div>
+		<hr class="linhab">
+		<form method="post">
     	<div>
-        	<label for="name"><font color ='white'> Nome:</font></label>
+        	<label for="name" class="fortex"> Nome: </label>
         	<input type="text" id="name" />
     	</div>
     	<div>
-        	<label for="mail"><font color ='white'> E-mail:</font>:</label>
+        	<label for="mail" class="fortex"> E-mail: </label>
         	<input type="email" id="mail" />
     	</div>
     	<div>
-        	<label for="msg"><font color ='white'> Mensagem:</font></label>
+        	<label for="msg" class="fortex"> Mensagem: </label>
         	<textarea id="msg"></textarea>
     	</div>
     	<div class="button">
-        	<button type="submit">Enviar</button>
+        	<button type="submit" onclick="alert('Mensagem enviada')">Enviar</button>
         	<button type="reset">Redefinir</button>
     	</div>
-	</form>
-</body>
+		</form>
+	</body>
 </html>
